@@ -1,0 +1,77 @@
+<!DOCTIPE HTML>
+<html>
+	<head>
+		<title> FORM REGISTER </title>
+	</head>
+	<body bgcolor="beige" text="rainbow">
+		<h1 align="center"> REGISTRATION FORM </h1>
+		<h1 align="center"> ONLINE CHESS TOURNAMENT 2021 </h1>
+		<hr/>
+	<body>
+		<form action="proses.php" method="POST"> 
+		<fieldset style="background-color:nude;">
+			
+			<h2>PERSONAL IDENTITY</h2>
+			<div>
+				<label> Full Name </label>
+				<div>
+					<input type="text" name="nama" value="" size="30" />
+				</div>
+			</div>
+			<div>
+				<label for="tempat_lahir">Place of Birth</label>
+				<div>
+					<input type="text" name="tempat_lahir" value="" size="30" />
+				</div>
+			</div>
+			<div>
+				<label for="tanggal_lahir">Date of Birth</label>
+				<div>
+					<input type="date" name="tanggal_lahir" value="2001-09-09" id="tanggal_lahir" />
+				</div>
+			</div>
+			<div>
+				<label> Gender </label>
+				<div>
+					<input type="radio" name="jk" value="M" checked />Male
+					<input type="radio" name="jk" value="F"  />Female
+				</div>
+			</div>
+
+			<div>
+				<label> Email </label>
+				<div>
+					<input type="text" name="email" value="" size="30" />
+				</div>
+			</div>
+			<div>
+				<label> Phone Number </label>
+				<div>
+					<input type="text" name="no hp" value="" size="30" />
+				</div>
+			</div>
+	
+			<div>
+				<label> Address </label>
+				<div>
+					<textarea name="alamat" rows="4" cols="30"></textarea>
+				</div>
+			</div>
+			<div>
+				<label> Category </label>
+				<div>
+					<select name="category">
+						<option value="">--Pilih--</option>
+						<option value="Student">Student</option>
+						<option value="College Student">College Student</option>
+						<option value="Professional">Professional</option>
+					</select>
+				</div>
+			</div>
+		</fieldset>
+		<div>
+			<input type="Submit" value="Submit" name="Proses" />
+		</div>
+		</form>
+	</body>
+</html>
